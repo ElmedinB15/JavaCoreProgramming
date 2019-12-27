@@ -4,7 +4,7 @@ package Five;
  class Shape {
 
  private double x;
-  private double y;
+  private double y; 
  String color;
  String name;
  

@@ -13,7 +13,7 @@ public class CallCalculator {
         Calculator c = new Calculator();
         c.ADD(31,13);
          
-        System.out.println(c.add());
+        System.out.println(c.add()); 
         System.out.println(c.div());
         System.out.println(c.sub());
         System.out.println(c.mul());
