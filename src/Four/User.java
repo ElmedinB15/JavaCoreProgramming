@@ -3,34 +3,19 @@ package Four;
 
 
 public class User {
-     
-    public int id;
-    public String ime;
+
+    public String id;
+    public String name;
+    public String score;
     
-    public User(int id, String ime){
+    public void parse(String povezivanje){
         
-        this.id =id;
-        this.ime =ime;
+        String [] podaci = povezivanje.split("-");
+        this.id = podaci[0];
+        this.name= podaci[1];
+        this.score = podaci[2];
+        
     }
-    public int getId(){
-        
-        return id;
-    }
-    
-    public String getIme(){
-        
-        return ime;
-    }
-    public String toString(){
-        
-        StringBuilder data = new StringBuilder();
-        
-        data.append(id);
-        data.append(" ");
-        data.append(ime);
-        
-        return data.toString();
-    }
-    
+  
     
 }
